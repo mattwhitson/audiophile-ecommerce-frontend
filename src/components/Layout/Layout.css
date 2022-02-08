@@ -1,0 +1,263 @@
+header {
+  background-color: #000000;
+  padding: 0 5rem;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 0rem;
+  }
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 6rem;
+  border-bottom: 1px solid rgba(241, 241, 241, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.header-container a {
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .header-container {
+    height: 4.5rem;
+    padding: 0 0.5rem;
+  }
+}
+
+.hamburger-icon {
+  height: 2.5rem;
+  padding-top: 0.8rem;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .hamburger-icon {
+    display: inline-block;
+  }
+}
+
+.hamburger-icon:hover {
+  cursor: pointer;
+}
+
+.nav-header {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .nav-header {
+    margin-right: auto;
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-header {
+    margin-right: 0;
+    padding-left: 0;
+  }
+}
+
+.desktop-nav a {
+  color: #ffffff;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+.desktop-nav a:hover {
+  color: #d87d4a;
+}
+
+@media (max-width: 1000px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
+.cart {
+  height: 1.5rem;
+}
+
+.cart:hover {
+  cursor: pointer;
+}
+
+footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5rem;
+  padding: 3rem 5rem;
+  color: #ffffff;
+  background-color: #101010;
+}
+
+footer p {
+  font-size: small;
+  color: #f1f1f1;
+  margin: 2rem 0;
+  width: 50%;
+}
+
+footer article {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+footer article h4 {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+footer article span {
+  display: block;
+  font-size: smaller;
+  font-weight: 500;
+  color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding: 3rem 1.5rem;
+  }
+  footer p {
+    text-align: center;
+    width: 100%;
+    font-size: smaller;
+    margin: 1rem 0;
+  }
+  footer span {
+    text-align: center;
+  }
+}
+
+.top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .top-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .top-row {
+    text-align: center;
+  }
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+}
+
+.footer-links a {
+  margin: 0 2rem;
+  font-size: 12px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-links a:hover {
+  color: #d87d4a;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .footer-links {
+    margin-left: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding: 0;
+  }
+  .footer-links a {
+    margin: 1rem 4rem 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem 0;
+  }
+  .footer-links a {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+}
+
+.social-links {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  margin-right: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.social-links svg {
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .social-links {
+    top: 75%;
+    right: 0;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .social-links {
+    top: 92%;
+    right: 50%;
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%);
+  }
+}
+/*# sourceMappingURL=Layout.css.map */

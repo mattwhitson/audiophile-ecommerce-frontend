@@ -1,0 +1,35 @@
+@import "../../variables";
+
+.cart-row {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+
+  img {
+    width: 50px;
+    margin-right: 1rem;
+  }
+
+  p {
+    margin-right: 1rem;
+  }
+}
+
+.quantity {
+  margin-left: auto;
+  display: flex;
+  width: 75px;
+  input,
+  button {
+    flex: 1;
+    width: 20px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: $greyBackground;
+  }
+
+  input {
+    text-align: center;
+  }
+}

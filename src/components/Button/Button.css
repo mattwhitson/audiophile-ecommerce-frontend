@@ -1,0 +1,42 @@
+.blackButton {
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  background-color: #101010;
+  color: #ffffff;
+}
+
+.blackButton:hover {
+  cursor: pointer;
+  background-color: #242424;
+}
+
+.whiteButton {
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  font-weight: bolder;
+  margin: 2rem 0;
+}
+
+.whiteButton:hover {
+  background-color: black;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.orangeButton {
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: bolder;
+  margin: 2rem 0;
+  background-color: #d87d4a;
+  color: #ffffff;
+}
+
+.orangeButton:hover {
+  background-color: #fbaf85;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Button.css.map */

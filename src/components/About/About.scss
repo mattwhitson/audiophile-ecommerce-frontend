@@ -1,0 +1,60 @@
+@import "../../variables";
+.about {
+  display: flex;
+  padding: 2rem 0;
+  width: 100%;
+  div {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-left: 0.5rem;
+  }
+  img {
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: column-reverse;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 2rem 0.5rem;
+
+    div {
+      margin: 0;
+    }
+  }
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 0;
+  flex-grow: 1;
+
+  p {
+    padding: 0 4rem;
+    font-size: smaller;
+  }
+
+  h4 {
+    padding: 2rem 4rem;
+    font-size: 44px;
+  }
+  span {
+    color: $darkOrange;
+  }
+
+  @media (max-width: 1200px) {
+    text-align: center;
+    p {
+      padding: 1rem;
+    }
+
+    h4 {
+      padding: 2rem 1rem;
+      font-size: 32px;
+    }
+  }
+}

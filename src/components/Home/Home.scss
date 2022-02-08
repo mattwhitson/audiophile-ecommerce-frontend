@@ -1,0 +1,82 @@
+@import "../../variables";
+
+.front-banner {
+  position: relative;
+
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.front-product {
+  position: absolute;
+  width: 50%;
+  padding: 10rem 5rem;
+
+  h4 {
+    font-size: 28px;
+    font-weight: 200;
+    letter-spacing: 8px;
+    color: $greyBackground;
+    padding-bottom: 1.5rem;
+  }
+  h1 {
+    font-size: 58px;
+    color: $textDefault;
+    padding-bottom: 1.5rem;
+  }
+
+  @media (max-width: 1400px) {
+    padding: 10rem 0 1rem 15rem;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 4rem 8rem;
+    width: 100%;
+    margin-left: auto;
+
+    h1 {
+      font-size: 48px;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    div {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    padding: 1rem;
+  }
+}
+
+.front-description {
+  color: $textDefault;
+}
+
+.front-banner-img {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}

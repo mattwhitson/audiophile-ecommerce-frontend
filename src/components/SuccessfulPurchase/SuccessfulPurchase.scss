@@ -1,0 +1,111 @@
+@import "../../variables";
+
+.purchase-successful-container {
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) !important;
+  padding: 2rem;
+  border-radius: 8px;
+
+  h2 {
+    font-size: 32px;
+    margin: 1.5rem 0;
+  }
+
+  @media (max-width: 800px) {
+    width: 95vw;
+  }
+}
+
+.svg-container {
+  display: flex;
+  width: fit-content;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  background-color: $darkOrange;
+}
+
+.checkmark-svg {
+  height: 30px;
+  width: 30px;
+}
+
+.bill-simplified {
+  display: flex;
+  padding: 1.5rem 0;
+}
+
+.items-purchased {
+  flex: 1.5;
+  background-color: $greyBackground;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.featured-item-purchased {
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+  padding: 1rem 0;
+  img {
+    height: 48px;
+  }
+}
+
+.other-items {
+  border-top: 1px solid grey;
+  margin: 0 1rem;
+  padding: 1rem;
+  font-size: small;
+}
+
+.name-cost {
+  display: flex;
+  flex-direction: column;
+  p {
+    font-weight: bold;
+  }
+
+  span {
+    font-size: smaller;
+  }
+}
+
+.quantity-of-item {
+  margin-left: auto;
+  padding-right: 1rem;
+}
+
+.grand-total-items {
+  background-color: black;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 2rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $textDefault;
+  font-size: smaller;
+}
+
+.return-home-button {
+  width: 100%;
+  padding: 0.75rem 0;
+  border: none;
+  outline: none;
+  background-color: $darkOrange;
+  color: $textDefault;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: $lightOrange;
+    cursor: pointer;
+  }
+}
