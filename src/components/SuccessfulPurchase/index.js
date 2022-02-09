@@ -42,6 +42,7 @@ const SuccessfulPurcahse = ({ handleClose, grandTotal }) => {
     const result = abbreviateProduct(itemsInCart[0].product.name);
 
     setAbbreviatedName(result);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   console.log(itemsInCart);

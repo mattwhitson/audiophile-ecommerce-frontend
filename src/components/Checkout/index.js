@@ -12,7 +12,7 @@ const Checkout = () => {
   const [paymentOption, setPaymentOption] = useState();
   const [totalCost, setTotalCost] = useState();
   const [purchaseSuccessful, setPurchaseSuccessful] = useState(false);
-  const { itemsInCart, setItemsInCart } = useContext(CartContext);
+  const { itemsInCart } = useContext(CartContext);
   const history = useHistory();
 
   // Calculates current price of items in cart

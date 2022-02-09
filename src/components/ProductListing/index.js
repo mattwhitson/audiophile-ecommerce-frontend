@@ -21,6 +21,7 @@ const ProductListing = () => {
   useEffect(() => {
     const result = data.find((product) => product.slug === productSlug);
     setProduct(result);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // if product hasn't been fetched yet show blank screen to avoid undefined errors

@@ -10,6 +10,7 @@ const ScrollToTop = ({ history, children }) => {
     return () => {
       unlisten();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return <Fragment>{children}</Fragment>;

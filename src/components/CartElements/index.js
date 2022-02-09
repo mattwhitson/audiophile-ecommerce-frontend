@@ -15,6 +15,7 @@ const CartElements = ({ item, handlePriceChange }) => {
     const result = abbreviateProduct(item.product.name);
 
     setAbbreviatedName(result);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Change quantity of product in cart
